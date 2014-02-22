@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1353173075 source:c:\users\dhaliwal\desktop\sudoku solver\main.cpp
+	<iostream>
+	<stdio.h>
+	<map>
+	<vector>
+
