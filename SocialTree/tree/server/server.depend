@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1328208434 source:c:\users\dhaliwal\workspace\server\winsockserver.cpp
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1333648122 source:c:\users\dhaliwal\desktop\example\server.cpp
+	<winsock2.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<sqlite3.h>
+	<roots_structs.h>
+	<iostream>
+	<list>
+
+1326728094 c:\users\dhaliwal\desktop\sqlite3\sqlite-amalgamation-3071000\sqlite3.h
+	<stdarg.h>
+
+1328436358 c:\users\dhaliwal\desktop\example\roots_structs.h
+	<iostream>
+	<string.h>
+	<vector.h>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\vector.h
+	"backward_warning.h"
+	"algobase.h"
+	"alloc.h"
+	<vector>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\backward_warning.h
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\algobase.h
+	"backward_warning.h"
+	"pair.h"
+	"iterator.h"
+	<bits/stl_algobase.h>
+	<bits/stl_uninitialized.h>
+	<ext/algorithm>
+	<ext/memory>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\pair.h
+	"backward_warning.h"
+	<bits/c++config.h>
+	<bits/stl_pair.h>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\iterator.h
+	"backward_warning.h"
+	"function.h"
+	<stddef.h>
+	"iostream.h"
+	<iterator>
+	<bits/stl_construct.h>
+	<bits/stl_raw_storage_iter.h>
+	<ext/iterator>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\function.h
+	"backward_warning.h"
+	<bits/c++config.h>
+	<stddef.h>
+	<bits/stl_function.h>
+	<ext/functional>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\iostream.h
+	"backward_warning.h"
+	<iostream>
+
+1107038102 c:\backup\navi_backup\d\dev-cpp\include\c++\3.4.2\backward\alloc.h
+	"backward_warning.h"
+	<bits/c++config.h>
+	<bits/allocator.h>
+

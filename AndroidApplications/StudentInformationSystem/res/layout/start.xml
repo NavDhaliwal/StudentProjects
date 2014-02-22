@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/layout"
+  android:background="@drawable/bg">
+  <!-- Dummy item to prevent Edit Text from receiving focus -->
+  <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+   
+    <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:id="@+id/layout1"
+  
+  android:paddingLeft="5dp"
+  >
+    <TextView
+    android:id="@+id/search_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ 	
+    android:text="By name or email"
+    android:textColor="#c0c0c0"
+    android:textSize="10dp"
+    android:textStyle="bold" 
+    android:paddingLeft="5dp"
+    
+    
+    />
+    <Spinner
+  android:id="@+id/sp1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:drawSelectorOnTop="true"
+  android:prompt="@string/Search"
+  android:layout_below="@id/search_name"
+  
+  />
+  </RelativeLayout>
+    <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:id="@+id/layout2"
+ 
+  android:layout_toRightOf="@id/layout1"
+  >
+     <TextView
+    android:id="@+id/search_degree"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"  
+    android:text="By degree"
+    android:textColor="#c0c0c0"
+    android:textSize="10dp"
+    android:textStyle="bold" 
+    android:paddingLeft="5dp"
+ 	
+ 	 />
+ 	<Spinner
+  android:id="@+id/sp2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:drawSelectorOnTop="true"
+  android:prompt="@string/Degree"
+  android:layout_below="@id/search_degree"
+  />
+   
+    </RelativeLayout>
+       <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:id="@+id/layout3"
+
+  android:layout_toRightOf="@id/layout2"
+  >
+    <TextView
+    android:id="@+id/search_spec"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"  
+    android:text="By specialization"
+    android:textColor="#c0c0c0"
+    android:textSize="10dp"
+    android:textStyle="bold" 
+   android:paddingLeft="5dp"
+    
+    />
+  
+  
+  <Spinner
+  android:id="@+id/sp3"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:drawSelectorOnTop="true"
+  android:prompt="@string/Spec."
+  android:layout_below="@id/search_spec"
+  />
+  </RelativeLayout>
+   <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/layout4"
+android:layout_below="@id/layout3"
+  android:paddingLeft="5dp"
+  >
+  <EditText
+  android:id="@+id/search"
+  android:layout_width="280dp"
+  android:layout_height="wrap_content"
+  android:editable="true"
+  android:enabled="true"
+  
+  android:nextFocusUp="@+id/search" 
+  android:nextFocusLeft="@+id/search"
+ 
+  />
+   <ImageView
+    android:id="@+id/img_search"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/img_search" 
+    android:visibility="visible"
+    android:padding="5dp"
+    android:layout_alignParentRight="true"
+    />
+    </RelativeLayout>
+ <ListView
+ android:id="@+id/list"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:clickable="true"
+ android:layout_below="@+id/layout4"
+ android:divider="#808000"
+            android:dividerHeight="4dp"
+ /> 
+</RelativeLayout>

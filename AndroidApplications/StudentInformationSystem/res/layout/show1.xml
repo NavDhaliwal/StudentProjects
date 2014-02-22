@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+       android:id="@+id/ScrollView01"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:scrollbars="vertical"
+       android:scrollbarFadeDuration="1"
+       >
+       
+<RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+      android:background="@drawable/bg"
+       >
+  
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name of Student"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:id="@+id/n1"
+    android:layout_marginTop="10dip"
+    />
+  <TextView
+    android:id="@+id/t1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="First Name"
+    android:textColor="#c0c0c0"
+    android:layout_marginTop="25dip"
+    android:textSize="17dp"
+    android:paddingTop="10dp"
+    />
+    <TextView
+    android:id="@+id/t_degree1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Degree"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    
+    android:layout_marginTop="10dip"
+    android:layout_below="@id/t1"
+    />
+  <TextView
+    android:id="@+id/t_degree"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Degree"
+    android:textColor="#c0c0c0"
+    
+    android:layout_below="@id/t_degree1"
+    android:textSize="17dp"
+    />
+     <TextView
+    android:id="@+id/t_special1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Specialization"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    
+    android:layout_marginTop="10dip"
+    android:layout_below="@id/t_degree"
+    />
+  <TextView
+    android:id="@+id/t_special"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Specialization"
+    android:textSize="17dp"
+    android:textColor="#c0c0c0"
+    
+    android:layout_below="@id/t_special1"
+    />
+       
+    <TextView
+    android:id="@+id/fa_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Father's Name"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    
+    android:layout_below="@id/t_special"
+    android:layout_marginTop="20dip"
+    />
+   
+    <TextView
+    android:id="@+id/t4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Father's Name" 
+ android:textSize="17dp"
+    android:textColor="#c0c0c0"
+    android:layout_below="@id/fa_name"
+   
+    />
+    
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mother's Name"
+    android:textStyle="bold"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:layout_below="@id/t4"
+    android:layout_marginTop="20dip"
+    />
+        
+    <TextView
+    android:id="@+id/t5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mother Name"
+    android:layout_below="@id/t4"
+    android:layout_marginTop="35dip"
+    android:textColor="#c0c0c0"
+    android:paddingTop="10dp"
+    android:textSize="17dp"
+    /> 
+    
+    <ImageView
+    android:id="@+id/img"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/student" 
+    android:visibility="visible"
+    android:padding="5dp"
+    android:layout_toRightOf="@id/n1"
+    android:layout_alignParentRight="true"
+    />
+        
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Birth Date"
+    android:textStyle="bold"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:layout_below="@id/t5"
+    android:layout_marginTop="20dip"
+    />    
+    <TextView
+    android:id="@+id/t6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date of Birth"
+    android:layout_below="@id/t5"
+    android:layout_marginTop="35dip"
+    android:textColor="#c0c0c0"
+    android:paddingTop="10dp"
+    android:textSize="17dp"
+    />
+  
+   <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="EmailId"
+    android:textStyle="bold"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:layout_below="@id/t6"
+    android:layout_marginTop="20dip"
+    />
+   <TextView
+    android:id="@+id/t7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email Id"
+    android:layout_below="@id/t6"
+    android:layout_marginTop="35dip"
+    android:textColor="#c0c0c0"
+    android:paddingTop="10dp"
+    android:textSize="17dp"
+    />
+   
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contact Number"
+    android:textColor="#800000"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    
+    android:layout_below="@id/t7"
+    android:layout_marginTop="20dip"
+    />
+    <TextView
+    android:id="@+id/t8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contact No"
+    android:layout_below="@id/t7"
+    android:layout_marginTop="35dip"
+    android:textColor="#c0c0c0"
+    android:paddingTop="10dp"
+    android:textSize="17dp" 
+    />
+   
+    
+   
+          </RelativeLayout>
+       
+       </ScrollView>
+
+</LinearLayout>   
+    
+    

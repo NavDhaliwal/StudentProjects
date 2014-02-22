@@ -1,0 +1,14 @@
+
+CREATE TABLE employee(username varchar(20) default null,password varchar(20) default null,empid varchar(20) primary key,first_name varchar(20) not null, last_name varchar(20) not null, middle_name varchar(20),dob date not null,doj date not null,salary number(10) not null,address varchar(20) not null,city varchar(20) not null, state varchar(20) not null,country varchar(20) not null,email_id varchar(30) ) ;
+
+create table emp_contact(empid varchar(20) references employee(empid),contact number(15));
+create table emp_qual(empid varchar(20) references employee(empid),qualifications varchar(10));
+create table emp_spec(empid varchar(20) references employee(empid),specializations varchar(10));
+
+
+CREATE TABLE user(username varchar(20) primary key,password varchar(20) not null,first_name varchar(20) not null, last_name varchar(20) not null, middle_name varchar(20),dob date not null,doj date not null,salary number(10) not null,address varchar(20) not null,city varchar(20) not null, state varchar(20) not null,country varchar(20) not null,email_id varchar(30) ) ;
+
+
+create table user_contact(username varchar(20) references user(username),contact number(15));
+create table user_qual(username varchar(20) references user(username),qualifications varchar(10));
+create table user_spec(username varchar(20) references user(username),specializations varchar(10));

@@ -1,0 +1,15 @@
+Linear Search:
+patchSize=90
+patch increment=9
+queryImages/montreal-canadiens-player1.jpg ---------------> 'Montreal Canadiens with percentage:1.8491 at pixel with X=190 Y=73 width and height=90'
+queryImages/calgary.jpg ---------------------> 'calgary flames with percentage:1.5394 at pixel with X=190 Y=280 width and height=90'
+queryImages/ottawa_senators_player.jpg ---------------> 'ottawa senators with percentage:9.2079 at pixel with X=226 Y=244 width and height=90'
+queryImages/Toronto_Maple_Leafs_player1.jpg --------------------->  'Toronto Maple Leafs with percentage:5.8743 at pixel with X=235 Y=271 width and height=90'
+queryImages/vancouver.jpg --------------------------------->  'Vancouver Canucks with percentage:3.0576 at pixel with X=235 Y=217 width and height=90'
+
+Tree search:
+if bin_size is small incorrect results
+binSize=9;
+patch increment=9
+queryImages/ottawa_senators_player.jpg ---------------> 'ottawa senators with percentage:1.3861 at pixel with X=226 Y=244 width and height=90'
+

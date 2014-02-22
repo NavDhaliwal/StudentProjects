@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_student"
+        android:icon="@drawable/add_s"
+        android:title="Add Student"       
+        />
+   		<item android:id="@+id/del_students"  
+		android:icon="@drawable/delete"		
+        android:title="Delete Students"       
+        />
+    
+</menu>

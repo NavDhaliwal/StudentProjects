@@ -1,0 +1,9 @@
+Author: Navjot Singh
+navjot.tu@gmail.com
+
+This code was to test if I can save social relationships in a database and use them 
+to construct a graph and save the each node as memory pointer in the database.
+Once a graph is constructed, it can be used to search any link.
+This is supposed to be a web based application but unfortunately I lost
+the front end code written in php which calls the c++ methods in a pc crash (Windows).
+The database used was SQLite but final version should be in MySQl.

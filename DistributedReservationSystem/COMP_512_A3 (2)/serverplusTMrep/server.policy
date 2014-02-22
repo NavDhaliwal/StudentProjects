@@ -1,0 +1,5 @@
+grant codeBase "file:/home/2012/nzhu4/Downloads/COMP_512_A3/serverplusTMrep/" {
+    permission java.security.AllPermission;
+};
+
+

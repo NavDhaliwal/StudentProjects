@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="createDB" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\createDB" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++98" />
+					<Add option="-g" />
+					<Add directory="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite-amalgamation-3071000" />
+					<Add directory="C:\Program Files\MySQL\MySQL Server 5.5\include" />
+				</Compiler>
+				<Linker>
+					<Add library="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite3.dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\createDB" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite-amalgamation-3071000" />
+					<Add directory="C:\Program Files\MySQL\MySQL Server 5.5\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.lib" />
+					<Add library="C:\Program Files\MySQL\MySQL Server 5.5\lib\mysqlclient.lib" />
+					<Add library="C:\Program Files\MySQL\MySQL Server 5.5\lib\debug\mysqlclient.lib" />
+					<Add library="C:\Program Files\MySQL\MySQL Server 5.5\lib\libmysql.dll" />
+					<Add library="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite3.dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite-amalgamation-3071000" />
+			<Add directory="C:\Program Files\MySQL\MySQL Server 5.5\include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Program Files\MySQL\MySQL Server 5.5\lib\mysqlclient.lib" />
+			<Add library="C:\Users\Dhaliwal\Desktop\sqlite3\sqlite3.dll" />
+		</Linker>
+		<Unit filename="..\example\push_entries.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

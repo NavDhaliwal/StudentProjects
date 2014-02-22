@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Student!</string>
+    <string name="app_name">Student Info.</string>
+    <string name="Search">Search By</string>
+    <string name="Degree">Search By Degree</string>
+    <string name="Degree1">Select Degree</string>
+    <string name="Spec.">Search By Specialization</string>
+    <string name="Spec1.">Select Specialization</string>
+</resources>

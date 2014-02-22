@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1328208990 source:c:\users\dhaliwal\workspace\client\winsockclient.cpp
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1328372975 source:c:\users\dhaliwal\desktop\example\client.cpp
+	<winsock2.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<my_global.h>
+	<mysql.h>
+
+1328385766 c:\wamp\bin\mysql\mysql5.5.16\include\my_global.h
+	<my_config.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<io.h>
+	<process.h>
+	<sys/types.h>
+	<pthread.h>
+	<pthread.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	<stddef.h>
+	<math.h>
+	<limits.h>
+	<float.h>
+	<fenv.h>
+	<sys/types.h>
+	<fcntl.h>
+	<sys/timeb.h>
+	<sys/time.h>
+	<time.h>
+	<sys/time.h>
+	<time.h>
+	<unistd.h>
+	<alloca.h>
+	<errno.h>
+	<crypt.h>
+	<assert.h>
+	<sys/stream.h>
+	<my_compiler.h>
+	<sys/socket.h>
+	<my_dbug.h>
+	<dlfcn.h>
+	<new>
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\my_config.h
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\my_compiler.h
+	<my_global.h>
+	<my_attribute.h>
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\my_attribute.h
+
+1328375135 c:\wamp\bin\mysql\mysql5.5.16\include\my_dbug.h
+	<sys/types.h>
+	<unistd.h>
+	<signal.h>
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\mysql_version.h
+	<custom_conf.h>
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\mysql_com.h
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\mysql_time.h
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\my_list.h
+
+1317016060 c:\wamp\bin\mysql\mysql5.5.16\include\typelib.h
+	"my_alloc.h"
+
+1317016058 c:\wamp\bin\mysql\mysql5.5.16\include\my_alloc.h
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+ <TextView
+  android:id="@+id/tv1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Kidaan"
+  
+  android:textColor="#e6b121"
+  android:textStyle="bold"
+  android:textSize="25dp"
+  android:padding="5dp"
+  />
+  <TextView
+  android:id="@+id/tv2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="qqqqqqqqqqqqqq"
+  android:padding="5dp"
+  android:textColor="#e6b121"
+  android:textSize="20dp"
+  android:textStyle="bold"
+  android:layout_toRightOf="@id/tv1"
+  />
+  <TextView
+  android:id="@+id/tv3"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="TV3"
+  android:textColor="#f0f0"
+  android:textSize="15dp"
+  android:textStyle="bold"
+  android:padding="5dp"
+  android:layout_below="@id/tv2"
+  android:layout_alignParentBottom="true"
+  android:layout_alignParentRight="true"
+  />
+</RelativeLayout>

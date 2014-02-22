@@ -1,0 +1,20 @@
+welcome page to have pic and your all links.
+search in welcome page.
+
+authenticate find relation.
+
+
+welcome page to have selectable list of users.
+search by emailid and name in welcome.
+
+go back home button to welcome.
+
+welcome page to have recent searches.
+
+BACKEND: use vectors instead of lists to skip push and pop operations.
+
+
+Sign up page. send mail for password.
+
+
+free memory of tree and q after result is found.

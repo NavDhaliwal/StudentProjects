@@ -1,0 +1,124 @@
+#
+#  Navjot Singh
+#  COMP 512 Project - Distributed Systems
+#  Fall 2013
+#
+
+
+About
+-----
+
+Distributed fault tolerant replcated reservation system using Java RMI.The instructions here are for a linux system.
+
+Instructions
+------------
+
+
+1. Extract the project into your home directory (~):
+
+
+2. Edit the source code to specify your unique RMI binding:
+
+* Files to edit:
+  ~/comp512/project/server/ResImpl/ResourceManagerImpl.java
+  ~/comp512/project/client/client.java
+
+
+3. Compile the code:
+
+[~] cd ~/comp512/project
+[~/comp512/project] javac server/*/*.java client/*.java
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+javac -classpath "/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" client/client.java client/RepClient.java serverplusTMrep/ResImpl/messages/*.java serverplusTMrep/*/*.java
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Start (your own) RMI registry on any available port:
+
+[~] cd ~/comp512/project/server
+[~/comp512/project/server] rmiregistry <port> &
+
+<port> here will be 8228
+
+5. Edit the policy files to point to your codebase:
+
+* Files to edit:
+  ~/comp512/project/server/server.policy
+  ~/comp512/project/client/client.policy
+* Replace <the_path> with the absolute path to ~
+
+6.Start FlightRM:
+//java -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2013/"User Name"/Distributed_Project/gitDir/src/server/ server.ResImpl.FlightResourceManager 8228
+
+java -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2013/"User Name"/DistributeProject/serverplusTM/ ResImpl.FlightResourceManager 8228
+---------------------------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
+ifconfig | grep -A 1 eth0 | grep inet
+
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM1
+
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM2
+
+
+java -Djgroups.bind_addr=132.206.54.129 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.CarResourceManager 8228 CarCluster Group28CarRM1
+
+java -Djgroups.bind_addr=132.206.54.129 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.CarResourceManager 8228 CarCluster Group28CarRM2
+
+java -Djgroups.bind_addr=132.206.54.91 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.HotelResourceManager 8228 RoomCluster Group28RoomRM1
+
+java -Djgroups.bind_addr=132.206.54.91 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.HotelResourceManager 8228 RoomCluster Group28RoomRM2
+
+
+test crash cases:
+
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM1badbefore
+
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM2
+
+-------------
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM1badafter
+
+java -Djgroups.bind_addr=132.206.54.127 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.FlightResourceManager 8228 FlightCluster Group28FlightRM2
+
+
+------------------------------------------------------------------------------------------------------<<<<<<<<<<<<<<<<<<<<<
+
+Start MiddleWare server with:
+//java -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2013/"User Name"/Distributed_Project/gitDir/src/server/ middleware.MiddlewareServer 8228 flight teaching
+
+java -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2013/"User Name"/Distribut_Project/serverplusTM/ ResImpl.MiddlewareServer 8228 flight teaching
+
+
+java -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.MiddlewareServer 8228 Group28ResourceManager1 flight lab2-31 Group28FlightRM1 flight lab2-31 Group28FlightRM2
+
+
+
+
+----------------------------------------------------------------------------------------------------------------->>>>>>>>>>>
+First, find out the eth0/ipv4 address:
+
+$ ifconfig | grep -A 1 eth0 | grep inet
+
+Then add the following options to your java command:
+
+$ java -Djgroups.bind_addr=132.206.52.103 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.MiddlewareServer 8228 Group28ResourceManager1 1 flight lab7-4 Group28FlightRM1 flight lab7-22 Group28FlightRM2
+
+$ java -Djgroups.bind_addr=132.206.54.91 -Djava.net.preferIPv4Stack=true -classpath ".:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/jgroups-3.4.1.Final.jar:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/lib/base64coder/target/base64coder.jar" -Djava.security.policy=server.policy -Djava.rmi.server.codebase=file:/home/2012/"User Name"/Downloads/COMP_512_A3/serverplusTMrep/ ResImpl.MiddlewareServer 8228 Group28ResourceManager2 -1 flight lab2-31 Group28FlightRM1 flight lab2-31 Group28FlightRM2
+-----------------------------------------------------------------------------------------------------------------<<<<<<<<<<<<
+
+
+7. Start the client (on any other machine):
+
+[~] cd ~/comp512/project/client
+[~/comp512/project/client] java -Djava.security.policy=client.policy -classpath .:../server client teaching 8228
+-------------------------------------------------------------------------------------------------------------------------------------------------
+[/comp512/project] java -Djava.security.policy=client.policy -classpath .:./serverplusTMrep client.RepClient client/input
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8. Test it with a command:
+
+> newcar,1,Abc,10,100
+
+
+

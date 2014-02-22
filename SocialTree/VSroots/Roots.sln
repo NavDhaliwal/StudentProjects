@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcproj", "{366F30F2-227E-4250-B83D-12F923839346}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "createDummyDB", "createDummyDB\createDummyDB.vcproj", "{0AFF7606-C425-4581-B2C3-D5CEC280F539}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcproj", "{F0B339BE-82F6-49EB-BD8B-9D004C74A772}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{366F30F2-227E-4250-B83D-12F923839346}.Debug|Win32.ActiveCfg = Debug|Win32
+		{366F30F2-227E-4250-B83D-12F923839346}.Debug|Win32.Build.0 = Debug|Win32
+		{366F30F2-227E-4250-B83D-12F923839346}.Release|Win32.ActiveCfg = Release|Win32
+		{366F30F2-227E-4250-B83D-12F923839346}.Release|Win32.Build.0 = Release|Win32
+		{0AFF7606-C425-4581-B2C3-D5CEC280F539}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AFF7606-C425-4581-B2C3-D5CEC280F539}.Debug|Win32.Build.0 = Debug|Win32
+		{0AFF7606-C425-4581-B2C3-D5CEC280F539}.Release|Win32.ActiveCfg = Release|Win32
+		{0AFF7606-C425-4581-B2C3-D5CEC280F539}.Release|Win32.Build.0 = Release|Win32
+		{F0B339BE-82F6-49EB-BD8B-9D004C74A772}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0B339BE-82F6-49EB-BD8B-9D004C74A772}.Debug|Win32.Build.0 = Debug|Win32
+		{F0B339BE-82F6-49EB-BD8B-9D004C74A772}.Release|Win32.ActiveCfg = Release|Win32
+		{F0B339BE-82F6-49EB-BD8B-9D004C74A772}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
